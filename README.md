@@ -47,7 +47,7 @@ All soft install in linux os
        41  cd ..
        42  find / name context.xml
        43  cd -
-    # change Context.xml File  
+   # change Context.xml File  
        45  sudo find / -name context.xml
        46  sudo vim /home/ec2-user/apache8/webapps/host-manager/META-INF/context.xml
                            <!--  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
@@ -81,7 +81,7 @@ All soft install in linux os
        66  ls
        67  cd conf/
        68  ls
-    # add port  
+   # add port  
        69  sudo vim server.xml 
                    change port 9090
        70  cd
@@ -92,7 +92,7 @@ All soft install in linux os
        75  ./shutdown.sh
        76  ./startup.sh
        77  cd
-    # install jenkins   
+   # install jenkins   
 
        78  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
        79  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
