@@ -3,7 +3,7 @@ All soft install in linux os
 # update os 
     1  sudo yum update
     2  ls
- # install openjdk   
+# install openjdk   
     3  sudo yum list | grep jdk1.8
     4  sudo yum list | grep jdk
     5  sudo yum install java-1.8.0-openjdk-devel.x86_64
@@ -15,7 +15,7 @@ All soft install in linux os
    11  sudo update-alternatives java
    12  sudo update-alternatives --config java
    13  sudo update-alternatives --config javac
- # Dwnload apache 8  
+# Dwnload apache 8  
    
    14  sudo wget https://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.61/bin/apache-tomcat-8.5.61.zip
    15  ls
@@ -47,7 +47,7 @@ All soft install in linux os
    41  cd ..
    42  find / name context.xml
    43  cd -
-  # change Context.xml File  
+# change Context.xml File  
    45  sudo find / -name context.xml
    46  sudo vim /home/ec2-user/apache8/webapps/host-manager/META-INF/context.xml
                        <!--  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
@@ -81,7 +81,7 @@ All soft install in linux os
    66  ls
    67  cd conf/
    68  ls
- # add port  
+# add port  
    69  sudo vim server.xml 
                change port 9090
    70  cd
@@ -92,7 +92,7 @@ All soft install in linux os
    75  ./shutdown.sh
    76  ./startup.sh
    77  cd
- # install jenkins   
+# install jenkins   
    
    78  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
    79  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
